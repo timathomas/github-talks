@@ -1,6 +1,7 @@
-# Flux 
+# Presentations
 
-An application architecture for React
+Got to: 
+[git Work Flow](https://gitpitch.com/timathomas/talks/master?p=gitWorkFlow)
 
 ---
 
