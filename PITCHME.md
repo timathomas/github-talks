@@ -1,9 +1,9 @@
-# Presentations
+## Talks with Tim
 
 Got to: 
-[git Work Flow](https://gitpitch.com/timathomas/talks/master?p=gitWorkFlow)
+Computational Demography [git Work Flow](https://gitpitch.com/timathomas/talks/master?p=gitWorkFlow) - November 15th, 2018
 
----
+<!-- ---
 
 ### Flux Design
 
@@ -14,3 +14,4 @@ Got to:
 ---
 
 ![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
+ -->

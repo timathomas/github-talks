@@ -1,14 +1,13 @@
-# Flux 
+# git and Github.com Workflows
 
-An application architecture for React
+What to do with all that code...
 
 ---
 
-### Flux Design
+## My dissertation 
+#### (a.k.a. what NOT to do)
 
-- Dispatcher: Manages Data Flow
-- Stores: Handle State & Logic
-- Views: Render Data via React
+![](images/messy.png)
 
 ---
 
