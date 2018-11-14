@@ -7,7 +7,7 @@ What to do with all that code...
 ## My dissertation 
 #### (a.k.a. what NOT to do)
 
-![](images/messy.png)
+![](gitWorkFlow/images/messy.png)
 
 <!-- ---
 
