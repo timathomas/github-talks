@@ -1,4 +1,4 @@
-# git and Github.com Workflows
+# git & Github.com Workflows
 
 What to do with all that code...
 
@@ -9,6 +9,7 @@ What to do with all that code...
 
 ![](images/messy.png)
 
----
+<!-- ---
 
 ![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
+ -->
