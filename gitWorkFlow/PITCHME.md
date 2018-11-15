@@ -6,13 +6,11 @@ presentation data and slides:
 
 ---
 
-#### what NOT to do (a.k.a. my dissertation)
+What ___NOT___ to do (a.k.a. my dissertation)
 ![](gitWorkFlow/images/messy.png)
 
 ---
-
-### a better git workflow 
-
+A better git workflow 
 ![](gitWorkFlow/images/bettergit.png)
 
 --- 
