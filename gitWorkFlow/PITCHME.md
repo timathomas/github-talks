@@ -48,25 +48,19 @@ presentation data and slides:
 ### Why git?
 #### Collaboration with colleagues
 
-![](gitWorkFlow/images/whygit2.png)
-
----
-
-### Why git?
-#### Collaboration with colleagues
-
 ![](gitWorkFlow/images/whygit3.png)
 
 ---
 
-[Software Carpentry](https://software-carpentry.org/lessons/)
+This tutorial is taken largely from [Software Carpentry](https://software-carpentry.org/lessons/)
 
 ---
 
 Creating a repository 
 
-    cd ~/Desktop
-    mkdir planets
+```
+    cd ~/Desktop <!-- navigate to your folder -->
+    mkdir planets # create a directory (new folder)
     cd planets
 
     git init
@@ -76,7 +70,7 @@ Creating a repository
     ls -a
 
     git status
-
+```
 ---
 
 Tracking changes 
