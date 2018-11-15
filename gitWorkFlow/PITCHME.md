@@ -6,9 +6,7 @@ presentation data and slides:
 
 ---
 
-### what NOT to do
-#### (a.k.a. my dissertation)
-
+#### what NOT to do (a.k.a. my dissertation)
 ![](gitWorkFlow/images/messy.png)
 
 ---
