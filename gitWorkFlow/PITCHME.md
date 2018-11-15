@@ -20,6 +20,7 @@ A better git workflow
 
 * Version control is like an unlimited ‘undo’.
 * Version control also allows many people to work in parallel.
+* Great for code (python and R), writing (markdown, latex, etc.), and all other files
 
 --- 
 
