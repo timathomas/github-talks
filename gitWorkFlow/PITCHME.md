@@ -2,7 +2,7 @@
 
 #### What to do with all that code...
 presentation data and slides: 
-[https://github.com/timathomas/talks/tree/master/gitWorkFlow](https://github.com/timathomas/talks/tree/master/gitWorkFlow)
+[https://github.com/timathomas/talks/tree/gitWorkFlow](https://github.com/timathomas/talks/tree/master/gitWorkFlow)
 
 ---
 
@@ -131,5 +131,66 @@ Say we add some text to the `mars.txt` file:
     --- a/mars.txt
     +++ b/mars.txt
     @@ -1,2 +1,3 @@
-     Cold and dry, but everything is my favorite color
+    Cold and dry, but everything is my favorite color
     +The two moons may be a problem for Wolfman
+
+---
+
+![](gitWorkFlow/images/staging.png)
+
+---
+
+    nano mars.txt
+    But the Mummy will appreciate the lack of humidity
+
+    cat mars.txt
+
+    git diff
+
+    git add mars.txt
+    git diff
+    git diff --staged
+
+    git commit -m "Discuss concerns about Mars' climate for Mummy"
+
+    git status
+
+    git log
+    git log -1
+    git log --oneline
+
+---
+
+### Exploring histories 
+
+---
+
+    nano mars.txt
+    An ill-considered change
+
+    git diff HEAD mars.txt
+
+    git add mars.txt
+    git commit -m "considerations"
+
+    git diff HEAD~1 mars.txt
+    git diff HEAD~2 mars.txt
+
+---
+
+#### Checkout older versions
+
+    git log --oneline
+
+    git checkout HEAD~2 mars.txt
+    cat mars.txt
+
+    git checkout HEAD mars.txt
+    cat mars.txt
+
+---
+### Collaborating on github.com
+
+[github.com](https://github.com)
+
+---
