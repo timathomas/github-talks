@@ -193,6 +193,6 @@ git merge wip
 
 ---
 
-### Collaboration with github.com
+### Collaboration with [github.com](https://github.com)
 
-[github.com](https://github.com)
+
