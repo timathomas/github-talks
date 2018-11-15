@@ -35,22 +35,16 @@ presentation data and slides:
 ![](gitWorkFlow/images/whygit1.png)
 
 ---
-
-### Why git?
-#### Collaboration with colleagues
-
+Collaboration
 ![](gitWorkFlow/images/whygit2.png)
 
 ---
-
-### Why git?
-#### Collaboration with colleagues
-
+Collaboration
 ![](gitWorkFlow/images/whygit3.png)
 
 ---
 
-This tutorial is taken largely from [Software Carpentry](https://software-carpentry.org/lessons/)
+This tutorial is taken largely from [Software Carpentry https://software-carpentry.org/lessons/](https://software-carpentry.org/lessons/)
 
 ---
 
