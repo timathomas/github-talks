@@ -60,7 +60,7 @@ Creating a repository
 
 ```
     cd ~/Desktop <!-- navigate to your folder -->
-    mkdir planets # create a directory (new folder)
+    mkdir planets <!-- create a directory (new folder) -->
     cd planets
 
     git init
@@ -75,6 +75,7 @@ Creating a repository
 
 Tracking changes 
 
+```
     mkdir moons # make another directory called moons
     nano mars.txt # create a text file
     Cold and dry, but everything is my favorite color
@@ -86,7 +87,7 @@ Tracking changes
     git status # check the additions
 
     git commit -m "Start notes on Mars as a base"
-
+```
 After you commit, git takes everything we added (staged) and stores a permanent copy in the `.git` directory. This is called a [commit](http://swcarpentry.github.io/git-novice/reference#commit) and it's identifier is named in the commit output. 
 
 --- 
