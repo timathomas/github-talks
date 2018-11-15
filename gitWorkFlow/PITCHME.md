@@ -232,6 +232,10 @@ git push origin master
 * BRANCH! (Stay off the master)
     - If I'm collaborating, do a pull request online sooner than later
         + label it `WIP: branch name`
+    - Stage and commit often (like your habit of saving a file)
+
+---
+### My Workflow
 * After you've completed a task or reached a goal, merge your branch to the master.
     - If you're collaborating, merge through the online repo, not through the terminal
 
