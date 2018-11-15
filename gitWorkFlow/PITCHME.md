@@ -139,6 +139,7 @@ git diff HEAD mars.txt
 git add mars.txt
 git commit -m "considerations"
 
+git log
 git log --oneline
 git diff HEAD~1 mars.txt
 git diff HEAD~2 mars.txt
@@ -155,10 +156,13 @@ cat mars.txt
 
 git checkout HEAD mars.txt
 cat mars.txt
+
+git checkout HEAD~1 mars.txt
+cat mars.txt
 ```
 
 ---
-### Branching
+## Branching
 ```
 git branch wip
 git branch
@@ -178,6 +182,7 @@ cat mars.txt
 git merge wip
 cat mars.txt
 ```
+* Don't work on the master branch
 
 ---
 
