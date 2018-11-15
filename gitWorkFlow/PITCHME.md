@@ -59,35 +59,37 @@ This tutorial is taken largely from [Software Carpentry](https://software-carpen
 Creating a repository 
 
 ```
-    cd ~/Desktop <!-- navigate to your folder -->
-    mkdir planets <!-- create a directory (new folder) -->
-    cd planets
+cd ~/Desktop # navigate to a directory
+mkdir planets # make a directory (folder) calles plamets
+cd planets # move into that directory
 
-    git init
+git init # initialize the directory
 
-    ls
+ls # take a look inside
 
-    ls -a
+ls -a # look a little deeper
 
-    git status
+git status # check the git status
 ```
 ---
 
 Tracking changes 
 
 ```
-    mkdir moons # make another directory called moons
-    nano mars.txt # create a text file
-    Cold and dry, but everything is my favorite color
-        # press ctrl X, y, return
-    cat mars.txt # look at
+mkdir moons # make another directory called moons
+nano mars.txt # create a text file using the core editor
+Cold and dry, but everything is my favorite color
+    # press ctrl X, y, return
+cat mars.txt # look at
 
-    git status # check the git status
-    git add mars.txt # stage mars.txt
-    git status # check the additions
+git status # check the git status
+git add mars.txt # stage mars.txt
+git status # check the additions
 
-    git commit -m "Start notes on Mars as a base"
+git commit -m "Start notes on Mars as a base"
+git status
 ```
+
 After you commit, git takes everything we added (staged) and stores a permanent copy in the `.git` directory. This is called a [commit](http://swcarpentry.github.io/git-novice/reference#commit) and it's identifier is named in the commit output. 
 
 --- 
