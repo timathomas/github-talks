@@ -94,8 +94,28 @@ After you commit, git takes everything we added (staged) and stores a permanent 
 
 --- 
 
-    git commit -m "Start notes on Mars as a base"
-the `-m` is a message flag describing your commit
+Check the commit
+```
+git log
+```
+
+Adding some changes
+```
+nano mars.txt
+Cold and dry, but everything is my favorite color
+The two moons may be a problem for Wolfman
+
+cat mars.txt
+
+git status
+git diff
+
+git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+    # this won't work until we add (stage) it
+
+git add mars.txt
+git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+```
 
 ---
 
