@@ -38,10 +38,6 @@ presentation data and slides:
 
 ---
 
-![Software Carpentry](https://software-carpentry.org/lessons/)
-
----
-
 ### Why git?
 #### Collaboration with colleagues
 
@@ -60,6 +56,10 @@ presentation data and slides:
 #### Collaboration with colleagues
 
 ![](gitWorkFlow/images/whygit3.png)
+
+---
+
+[Software Carpentry](https://software-carpentry.org/lessons/)
 
 ---
 
