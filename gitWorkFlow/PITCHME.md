@@ -119,95 +119,78 @@ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
 
 ---
 
-`git log` lists all the commits to a repository in reverse chronological order. 
+Let's add some more
+```
+nano mars.txt
+But the Mummy will appreciate the lack of humidity
 
-    commit 1262e2a0ef2ac0d0b6e4ace6682502fb8d8cc591 (HEAD -> master)
-    Author: Tim Thomas <t77@uw.edu>
-    Date:   Wed Nov 14 15:13:48 2018 -0800
+cat mars.txt
 
-    Start notes on Mars as a base
+git diff
 
-All the changes are located in the `.git` directory. 
+git add mars.txt
+git diff
+git diff --staged
 
---- 
+git commit -m "Discuss concerns about Mars' climate for Mummy"
 
-Say we add some text to the `mars.txt` file: 
+git status
 
-    nano mars.txt
-    Cold and dry, but everything is my favorite color
-    The two moons may be a problem for Wolfman
-
-    git status    
-    git diff
-
----
-
-    $ git diff
-    diff --git a/mars.txt b/mars.txt
-    index d927c56..e4d197b 100644
-    --- a/mars.txt
-    +++ b/mars.txt
-    @@ -1,2 +1,3 @@
-    Cold and dry, but everything is my favorite color
-    +The two moons may be a problem for Wolfman
+git log
+git log -1
+git log --oneline
+```
 
 ---
 
-![](gitWorkFlow/images/staging.png)
+Exploring histories
+```
+nano mars.txt
+An ill-considered change
+
+git diff HEAD mars.txt
+
+git add mars.txt
+git commit -m "considerations"
+
+git diff HEAD~1 mars.txt
+git diff HEAD~2 mars.txt
+```
 
 ---
 
-    nano mars.txt
-    But the Mummy will appreciate the lack of humidity
+Checkout an older version
+```
+git log --oneline
 
-    cat mars.txt
+git checkout HEAD~2 mars.txt
+cat mars.txt
 
-    git diff
+git checkout HEAD mars.txt
+cat mars.txt
+```
 
-    git add mars.txt
-    git diff
-    git diff --staged
+---
+### Branching
+```
+git branch wip
+git branch
 
-    git commit -m "Discuss concerns about Mars' climate for Mummy"
+git checkout wip
+git branch
 
-    git status
+nano mars.txt
+Elon is giving us a ride tomorrow
+git add mars.txt
+git commit -m "travel plans"
+cat mars.txt
 
-    git log
-    git log -1
-    git log --oneline
+git checkout master
+cat mars.txt
+
+git merge wip
+```
 
 ---
 
-### Exploring histories 
-
----
-
-    nano mars.txt
-    An ill-considered change
-
-    git diff HEAD mars.txt
-
-    git add mars.txt
-    git commit -m "considerations"
-
-    git diff HEAD~1 mars.txt
-    git diff HEAD~2 mars.txt
-
----
-
-#### Checkout older versions
-
-    git log --oneline
-
-    git checkout HEAD~2 mars.txt
-    cat mars.txt
-
-    git checkout HEAD mars.txt
-    cat mars.txt
-
----
-### Collaborating on github.com
-
-[github.com](https://github.com)
-
----
+### Collaboration with github.com
