@@ -195,4 +195,29 @@ git merge wip
 
 ### Collaboration with [github.com](https://github.com)
 
+---
 
+Make some commits and then do a pull request 
+This way, collaborators can see what you're working on 
+Name it a 
+```
+WIP: ....
+```
+
+---
+
+...or push an existing repository from the command line
+```
+git remote add origin https://github.com/timathomas/planets.git
+git push -u origin master 
+```
+
+---
+
+```
+echo "*~" >> .gitignore
+
+git add .gitignore
+git commit -m "add .gitignore"
+git push origin master 
+```
