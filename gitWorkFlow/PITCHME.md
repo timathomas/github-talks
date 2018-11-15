@@ -192,6 +192,9 @@ cat mars.txt
 ---
 
 ### Collaboration with [github.com](https://github.com)
+* Github is great for public repos
+* Gitlab is great for more security and private repos
+* both allow collaboration
 
 ---
 
