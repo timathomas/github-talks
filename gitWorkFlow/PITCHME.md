@@ -159,6 +159,8 @@ cat mars.txt
 
 git checkout HEAD~1 mars.txt
 cat mars.txt
+git add mars.txt
+git commit -m "reverting to previous version"
 ```
 
 ---
@@ -181,6 +183,8 @@ cat mars.txt
 
 git merge wip
 cat mars.txt
+git merge wip
+cat mars.txt
 ```
 * Don't work on the master branch
 
@@ -192,17 +196,22 @@ cat mars.txt
 
 Make some commits and then do a pull request 
 This way, collaborators can see what you're working on 
-Name it a 
+Name it 
 ```
 WIP: ....
 ```
 
 ---
-
-...or push an existing repository from the command line
+### Connecting your local repository to github.com
+...push an existing repository from the command line
 ```
 git remote add origin https://github.com/timathomas/planets.git
 git push -u origin master 
+```
+
+When you're on a branch
+```
+git push origin <branch name>
 ```
 
 ---
@@ -216,6 +225,24 @@ git push origin master
 ```
 
 ---
+### My Workflow
+* Start or fork a repo
+* clone the online repo to my local machine
+* make some base edits to the README.md
+* BRANCH! (Stay off the master)
+    - If I'm collaborating, do a pull request online sooner than later
+        + label it `WIP: branch name`
+* After you've completed a task or reached a goal, merge your branch to the master.
+    - If you're collaborating, merge through the online repo, not through the terminal
 
-new pull request 
-forking 
+### Suggestions
+* Keep a log.md and update the README.md file often
+
+---
+
+#### My favorite tools
+* [Sublime Text](https://www.sublimetext.com)
+    - Others [Atom](https://atom.io) (sluggish in my opinion)
+    - Favorite Sublime Packages
+        + Git, Gitgutter, Thesaurus, LanguageTool, R-IDE, SendCode, Terminal
+* [Sublime Merge](https://www.sublimemerge.com) to view complex branches
