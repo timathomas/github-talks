@@ -32,13 +32,9 @@ A better git workflow
 
 ![](gitWorkFlow/images/whygit1.png)
 
----
-Collaboration
-![](gitWorkFlow/images/whygit2.png)
+---?image=gitWorkFlow/images/whygit2.png
 
----
-Collaboration
-![](gitWorkFlow/images/whygit3.png)
+---?image=gitWorkFlow/images/whygit3.png
 
 ---
 
