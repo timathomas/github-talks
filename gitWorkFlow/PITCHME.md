@@ -153,6 +153,7 @@ git diff HEAD mars.txt
 git add mars.txt
 git commit -m "considerations"
 
+git log --oneline
 git diff HEAD~1 mars.txt
 git diff HEAD~2 mars.txt
 ```
@@ -189,6 +190,7 @@ git checkout master
 cat mars.txt
 
 git merge wip
+cat mars.txt
 ```
 
 ---
@@ -221,3 +223,8 @@ git add .gitignore
 git commit -m "add .gitignore"
 git push origin master 
 ```
+
+---
+
+new pull request 
+forking 
