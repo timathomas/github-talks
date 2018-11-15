@@ -2,7 +2,7 @@
 
 #### What to do with all that code...
 presentation data and slides: 
-[https://github.com/timathomas/talks/tree/gitWorkFlow](https://github.com/timathomas/talks/tree/master/gitWorkFlow)
+[github.com/timathomas/talks/tree/gitWorkFlow](https://github.com/timathomas/talks/tree/master/gitWorkFlow)
 
 ---
 
