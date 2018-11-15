@@ -32,9 +32,9 @@ A better git workflow
 
 ![](gitWorkFlow/images/whygit1.png)
 
----?image=gitWorkFlow/images/whygit2.png
+---?image=gitWorkFlow/images/whygit2.png&size=contain
 
----?image=gitWorkFlow/images/whygit3.png
+---?image=gitWorkFlow/images/whygit3.png&size=contain
 
 ---
 
