@@ -1,6 +1,6 @@
 ## Talks with Tim
 
-Got to: 
+Go to: 
 Computational Demography [git Work Flow](https://gitpitch.com/timathomas/talks/master?p=gitWorkFlow) - November 15th, 2018
 
 <!-- ---
