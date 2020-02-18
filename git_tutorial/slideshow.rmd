@@ -1,0 +1,303 @@
+---
+title: "*What to do with all that code...?*"
+subtitle: "Git, Github, & Project Workflows"
+author: Tim Thomas
+date: 2020.02.07
+output: 
+    ioslides_presentation:
+        css: style.css
+        # logo: ../images/UDPLogo.png{width = 1000px}
+---
+
+## What ___NOT___ to do (a.k.a. my dissertation)
+
+```{r, out.width = "80%", echo=FALSE}
+knitr::include_graphics("../images/messy.png")
+```
+
+## A better git workflow 
+
+```{r, out.width = "90%", echo=FALSE}
+knitr::include_graphics("../images/bettergit.png")
+```
+
+# Why git? 
+## Version Control
+
+* Version control is like an ***unlimited ‘undo’***.
+* Version control also ***allows teams to work in parallel***.
+* Excellent for ***coding*** (python, R, sql, ), ***writing*** (markdown, latex, etc.), and so many ***other formats***
+    * Websites
+    * Mapping
+    * even store packaged documents (word, pptx, keynote)
+
+## Basic git principles
+
+* base version
+* make some edits
+* rewind
+* add more edits
+
+```{r, out.width = "80%", echo=FALSE}
+knitr::include_graphics("../images/whygit1.png")
+```
+
+## Collaboration
+
+```{r, out.width = "80%", echo=FALSE}
+knitr::include_graphics("../images/whygit2.png")
+```
+
+## Collaboration
+
+```{r, out.width = "80%", echo=FALSE}
+knitr::include_graphics("../images/whygit3.png")
+```
+
+# Prep
+
+## Prep
+1. Make a "git" directory in your Home directory
+
+
+# Steps
+
+## Create a git repository on your local machine
+
+Using [Gihub desktop](https://desktop.github.com):
+
+1. Initalize a directory (git init)
+2. Create a branch
+3. Edit a file
+4. Make a commit 
+5. Publish to github
+6. Make a pull request
+
+## git branch
+
+```{code}
+git branch
+```
+
+
+<!-- #  -->
+
+<!-- This tutorial is taken largely from [Software Carpentry https://software-carpentry.org/lessons/](https://software-carpentry.org/lessons/) -->
+
+<!-- --- -->
+
+## Getting started 
+1. Open `terminal` in windows or `powershell` in Windows
+
+
+Creating a repository 
+
+```{code}
+cd ~/Desktop # navigate to a directory
+mkdir planets # make a directory (folder) calles plamets
+cd planets # move into that directory
+
+git init # initialize the directory
+
+ls # take a look inside
+
+ls -a # look a little deeper
+
+git status # check the git status
+```
+---
+
+Tracking changes 
+
+```
+mkdir moons # make another directory called moons
+nano mars.txt # create a text file using the core editor
+Cold and dry, but everything is my favorite color
+    # press ctrl X, y, return
+cat mars.txt # look at
+
+git status # check the git status
+git add mars.txt # stage mars.txt
+git status # check the additions
+
+git commit -m "Start notes on Mars as a base"
+git status
+```
+
+After you commit, git takes everything we added (staged) and stores a permanent copy in the `.git` directory. This is called a [commit](http://swcarpentry.github.io/git-novice/reference#commit) and it's identifier is named in the commit output. 
+
+--- 
+
+Check the commit
+```
+git log
+```
+
+Adding some changes
+```
+nano mars.txt
+Cold and dry, but everything is my favorite color
+The two moons may be a problem for Wolfman
+
+cat mars.txt
+
+git status
+git diff
+
+git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+    # this won't work until we add (stage) it
+
+git add mars.txt
+git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+```
+
+---
+
+Let's add some more
+```
+nano mars.txt
+But the Mummy will appreciate the lack of humidity
+
+cat mars.txt
+
+git diff
+
+git add mars.txt
+git diff
+git diff --staged
+
+git commit -m "Discuss concerns about Mars' climate for Mummy"
+
+git status
+
+git log
+git log -1
+git log --oneline
+```
+
+---
+
+Exploring histories
+```
+nano mars.txt
+An ill-considered change
+
+git diff HEAD mars.txt
+
+git add mars.txt
+git commit -m "considerations"
+
+git log
+git log --oneline
+git diff HEAD~1 mars.txt
+git diff HEAD~2 mars.txt
+```
+
+---
+
+Checkout an older version
+```
+git log --oneline
+
+git checkout HEAD~2 mars.txt
+cat mars.txt
+
+git checkout HEAD mars.txt
+cat mars.txt
+
+git checkout HEAD~1 mars.txt
+cat mars.txt
+git add mars.txt
+git commit -m "reverting to previous version"
+```
+
+---
+## Branching
+```
+git branch wip
+git branch
+
+git checkout wip
+git branch
+
+nano mars.txt
+Elon is giving us a ride tomorrow
+git add mars.txt
+git commit -m "travel plans"
+cat mars.txt
+
+git checkout master
+cat mars.txt
+
+git merge wip
+cat mars.txt
+git merge wip
+cat mars.txt
+```
+* Don't work on the master branch
+
+---
+
+### Collaboration with [github.com](https://github.com)
+* Github is great for public repos
+* Gitlab is great for more security and private repos
+* both allow collaboration
+
+---
+
+Make some commits and then do a pull request 
+This way, collaborators can see what you're working on 
+Name it 
+```
+WIP: ....
+```
+
+---
+### Connecting your local repository to github.com
+...push an existing repository from the command line
+```
+git remote add origin https://github.com/timathomas/planets.git
+git push -u origin master 
+```
+
+When you're on a branch
+```
+git push origin <branch name>
+```
+
+---
+
+```
+echo "*~" >> .gitignore
+
+git add .gitignore
+git commit -m "add .gitignore"
+git push origin master 
+```
+
+---
+### My Workflow
+* Start or fork a repo
+* clone the online repo to my local machine
+* make some base edits to the README.md
+* BRANCH! (Stay off the master)
+    - If I'm collaborating, do a pull request online sooner than later
+        + label it `WIP: branch name`
+    - Stage and commit often (like your habit of saving a file)
+
+---
+### My Workflow
+* After you've completed a task or reached a goal, merge your branch to the master.
+    - If you're collaborating, merge through the online repo, not through the terminal
+
+### Suggestions
+* Keep a log.md and update the README.md file often
+
+---
+
+#### My favorite tools
+* [Sublime Text](https://www.sublimetext.com)
+    - Others [Atom](https://atom.io) (sluggish in my opinion)
+    - Favorite Sublime Packages
+        + Git, Gitgutter, Thesaurus, LanguageTool, R-IDE, SendCode, Terminal
+* [Sublime Merge](https://www.sublimemerge.com) to view complex branches
